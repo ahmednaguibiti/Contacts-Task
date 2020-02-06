@@ -24,9 +24,9 @@ export class ContactsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.contactService.getRecentContacts().subscribe(data =>{
-      this.contacts = data.data;
-      this.searchedContacts = data.data;
+    this.contactService.getRecentContacts().subscribe(res =>{
+      this.contacts = res['data'];
+      this.searchedContacts = res['data'];
 
       if(this.contactService.getNewContacts()){
         this.contacts.push(this.contactService.getNewContacts());
