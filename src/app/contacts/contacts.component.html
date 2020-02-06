@@ -1,0 +1,48 @@
+<div class="conatiner">
+  <div class="row justify-content-md-center">
+    <div class="page col-sm-12 col-md-5">
+
+      <div class="search">
+        <input type="search" name="searchContact" id="searchContact" placeholder="Search Contacts" (input)="searchContact($event)">
+      </div>
+
+      <div class="addNewContact">
+        <div class="firstLine">
+          <h3>Add New Contacts</h3>
+          <a href="/addNewContact"><i class="fas fa-plus"></i></a>
+        </div>
+        <div class="clear"></div>
+        <hr>
+        <div class="secondLine">
+          <h3>Latest Contacts</h3>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <div class="contact" *ngFor="let contact of contacts">
+          <div class="letter" id="{{contact[0].toUpperCase()}}">
+            <h3>{{contact[0].toUpperCase()}}</h3>
+          </div>
+          <div class="person" *ngFor="let person of contact[1]">
+            <div class="image">
+              <img src="assets/person.png" alt="person" />
+            </div>
+            <div class="number">
+              <h3>{{person.firstName}} {{person.lastName}}</h3>
+              <h3>{{person.email}}</h3>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="characters">
+        <a pageScroll *ngFor="let char of characters" href="#{{char.toUpperCase()}}">{{char.toUpperCase()}}</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

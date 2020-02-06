@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="page col-sm-12 col-md-6">
+
+      <div class="header">
+        <h3>Add a New Contact</h3>
+      </div>
+
+      <div class="addImage">
+        <img src="assets/person.png" alt="upload photo">
+        <div class="form-group">
+          <label for="uploadImage">Add Photo</label>
+          <input type="file" name="uploadImage" id="uploadImage" class="form-control" hidden>
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="" method="POST">
+          <div class="form-group">
+            <input type="text" name="firstName" class="form-control" placeholder="First name" [(ngModel)]="firstName" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="lastName" class="form-control" placeholder="Last name" [(ngModel)]="lastName" required>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-3">
+                <input type="number" name="code" class="form-control" placeholder="+44" [(ngModel)]="code" required>
+              </div>
+              <div class="col-sm-9">
+                <input type="phone" name="Number" class="form-control" placeholder="5672249" [(ngModel)]="phone" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email address" [(ngModel)]="email" required>
+          </div>
+          <div class="form-group">
+            <button class="submit btn btn-success" (click)="addNewContact($event)">Add Contact</button>
+            <button class="btn btn-primary" (click)="cancel()">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

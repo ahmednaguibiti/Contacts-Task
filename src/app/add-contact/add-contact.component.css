@@ -1,0 +1,71 @@
+.clear{
+    clear:both
+}
+
+.page{
+    border:1px solid #CCC;
+    padding:20px;
+    text-align:center;
+    margin:1%
+}
+
+
+.header{
+    margin:2% 0 10%
+}
+.header h3{
+    text-align: left;
+    border-bottom: 2px solid #a3daa3;
+    padding-bottom: 11px;
+    color: #b5b1b1;
+    font-size: 30px;
+}
+
+
+.addImage img{
+    width:20%;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.addImage label{
+    color: #DDD;
+    margin: 2% 0;
+    font-size:20px
+}
+.addImage label:hover{
+    cursor:pointer
+}
+
+
+.form{
+    margin-bottom:6%
+}
+.form input{
+    outline:0;
+    border:0;
+    border-bottom:1px solid #a3daa3
+}
+.form input:hover, .form input:active, .form input:focus{
+    outline:0 !important;
+    box-shadow:none !important
+}
+.form ::placeholder{
+    color:#bdbdbd;
+    font-size:16px
+}
+
+
+.form button{
+    display: block;
+    margin: 2% auto;
+    width: 49%;
+    border-radius: 8px;
+    font-size: 22px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
